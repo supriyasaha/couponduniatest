@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_layout" >
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/border_image"
+       android:padding="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_logo"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image_logo"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-thin"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:textColor="#7e7e7e"
+        android:paddingTop="2dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="TextView" 
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/image_logo"
+        android:paddingTop="5dp"
+        android:text=""
+          android:fontFamily="sans-serif-thin"
+        android:maxLength="45"
+        android:textColor="#7e7e7e" >
+
+    </TextView>
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:paddingTop="8dp"
+    android:layout_below="@+id/categories" >
+   
+    <ImageView 
+        android:id="@+id/image_map"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/map"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+         android:textColor="#7e7e7e"   
+          android:layout_toRightOf="@+id/image_map"
+        android:text="162 m"
+        android:paddingLeft="2dp"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+       
+        android:layout_toRightOf="@+id/textView4"
+        android:paddingLeft="5dp"    
+         android:textColor="#7e7e7e"   
+        android:text="TextView"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="14dp" />
+	</RelativeLayout>
+</RelativeLayout>
