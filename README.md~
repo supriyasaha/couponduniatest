@@ -9,13 +9,17 @@ On every launch of the app it will check for network connectivity.If network con
 While fetching data from the server in doInTheBackground it creates an object of a class "JsonProvider" and calls the function "getJsonFromUrl()" from the class JSONProvider where it will open a HTTPConnection to the url and returns the server response after the background job is done.
 
 The server response is stored in the object of class  "ServerResponse.class" where it has fields
+
 =>String response="" to store the JSON response from the server,
+
 =>String error="" to store the error that might have occurred while connecting to the url or if the server return a status code other than 200.
 
 onPostExecute it will check if the server response returned has any error or not, if not then it will simple parse the JSON string, loads the data in the listview using the "ListAdapter" class.
 
 While parsing JSON string it creates an ArrayList of RetaurantInfo class "ArrayList<RestaurantInfo>" and stores the information about each restaurant in this Array-list.
+
 The "RestaurantInfo" class contains fields like:
+
 =>latitude
 =>longitude
 =>distance= distance form my current location
