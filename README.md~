@@ -21,13 +21,21 @@ While parsing JSON string it creates an ArrayList of RetaurantInfo class "ArrayL
 The "RestaurantInfo" class contains fields like:
 
 =>latitude
+
 =>longitude
+
 =>distance= distance form my current location
+
 =>name
+
 =>logoUrl
+
 =>NeighbourhoodPlace
+
 =>offers
+
 =>categories
+
 It creates a new RestaurantInfo object for each restaurant and adds the object to this ArrayList.
 The ArrayList is sorted with respect to the distance field and computed the sorted array in the Listview.
 
