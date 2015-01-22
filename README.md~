@@ -40,4 +40,5 @@ It creates a new RestaurantInfo object for each restaurant and adds the object t
 The ArrayList is sorted with respect to the distance field and computed the sorted array in the Listview.
 
 The refresh button on the top is used to track the current location and recompute the distance and display the Listview.
-I have used the picasso jar file for loading images
+
+I used the pciasso library for image loading an and management

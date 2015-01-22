@@ -41,4 +41,4 @@ The ArrayList is sorted with respect to the distance field and computed the sort
 
 The refresh button on the top is used to track the current location and recompute the distance and display the Listview.
 
-I used the pciasso library for image loading an and management
+I used the pciasso library for image loading and management
